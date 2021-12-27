@@ -1,0 +1,45 @@
+# Site Settings
+baseurl: ""
+url : "https://anushaa51.github.io"
+
+# Blog Settings
+theme_settings :
+  title : Anusha A
+  favicon : assets/favicon.ico
+
+  # Profile Settings
+  profile :
+    image : assets/img/portrait.jpg
+    username : Anusha A
+    description : An ok kid from Pallet Town, with a brand new world to see 👽
+    experience :
+      - start : 2020-08-01
+        end : Now
+        experience : Software Engineer, Target
+    skills : 
+      - skill : HTML5 & CSS
+        value : 85  # Percent value
+        
+  # Icons
+  icons :
+    email:  anusha50898@gmail.com
+    linkedin:  https://www.linkedin.com/in/anusha-b05/
+    github: anushaa51
+    gitlab: 
+    bitbucket: 
+    google_plus:
+    twitter: porgdragoon
+    youtube:
+    facebook:
+    instagram:
+
+  # Disqus
+  disqus_shortname :
+
+# Build Ssttings
+sass:
+  sass_dir: _sass
+  style: :compressed
+gems: [jekyll-paginate]
+bootstrap:
+  assets: true
