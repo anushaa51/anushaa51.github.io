@@ -19,6 +19,8 @@ theme_settings :
     skills : 
       - skill : HTML5 & CSS
         value : 85  # Percent value
+      - skill : SOME OTHER SKILL
+        value : 55  # Percent value
         
   # Icons
   icons :
