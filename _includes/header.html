@@ -3,37 +3,57 @@
 <header>
   <nav>
     <ul>
-      {% case current[0] %}
-      {% when 'tags'%}
-      <!-- tags -->
+      {% if current[0] == 'resume' %}
+      <!-- Resume -->
       <a href="{{ site.url }}">
+        <li class="btn-nav">Bio</li>
+      </a>
+      <li class="current">Resume</li>
+      <a href="{{ site.url }}/projects">
+        <li class="btn-nav">Projects</li>
+      </a>
+      <a href="{{ site.url }}/blog">
         <li class="btn-nav">Blog</li>
       </a>
-      <li class="current">Tags</li>
-      <a href="{{ site.url }}/portfolio">
-        <li class="btn-nav">Portfolio</li>
-      </a>
-      <!-- portfolio -->
-      {% when 'portfolio'%}
+      <!-- Projects -->
+      {% elsif current[0] == 'projects' %}
       <a href="{{ site.url }}">
+        <li class="btn-nav">Bio</li>
+      </a>
+      <a href="{{ site.url }}/resume">
+        <li class="btn-nav">Resume</li>
+      </a>
+      <li class="current">Projects</li>
+      <a href="{{ site.url }}/blog">
         <li class="btn-nav">Blog</li>
       </a>
-      <a href="{{ site.url }}/tags">
-        <li class="btn-nav">Tags</li>
+      <!-- Default (landing) -->
+      {% elsif current.size == 0 %}
+      <a href="{{ site.url }}">
+        <li class="current btn-nav">Bio</li>
       </a>
-      <li class="current">Portfolio</li>
+      <a href="{{ site.url }}/resume">
+        <li class="btn-nav">Resume</li>
+      </a>
+      <a href="{{ site.url }}/projects">
+        <li class="btn-nav">Projects</li>
+      </a>
+      <a href="{{ site.url }}/blog">
+        <li class="btn-nav">Blog</li>
+      </a>
+      <!-- Blog and all blog posts -->
       {% else %}
-      <!-- others -->
       <a href="{{ site.url }}">
-        <li class="current btn-nav">Blog</li>
+        <li class="btn-nav">Bio</li>
       </a>
-      <a href="{{ site.url }}/tags">
-        <li class="btn-nav">Tags</li>
+      <a href="{{ site.url }}/resume">
+        <li class="btn-nav">Resume</li>
       </a>
-      <a href="{{ site.url }}/portfolio">
-        <li class="btn-nav">Portfolio</li>
+      <a href="{{ site.url }}/projects">
+        <li class="btn-nav">Projects</li>
       </a>
-      {% endcase %}
+      <li class="current">Blog</li>
+      {% endif %}
     </ul>
   </nav>
 </header>
