@@ -20,18 +20,21 @@ layout: page
         </article>
         <article class="exper">
           <p class="title">EXPERIENCE</p>
-          <ul class="exper-list">
+          <ul class="exper-list" style="margin-left: 0;">
             {% for exp in profile.experience %}
             <li class="meta">
-              <p class="date">{{ exp.start }} ~ {{ exp.end }}</p>
-              <p class="description">{{ exp.experience }}</p>
+              <p class="date">{{ exp.start }} - {{ exp.end }}</p>
+              <p style="font-weight: normal; margin-top: 10px; margin-bottom: 10px;">{{ exp.experience }}</p>
+              <p class="description">{{ exp.place }}</p>
+              <p style="font-weight: normal; font-size: small;">{{exp.location}}</p>
+              <p style="margin-top: 15px; font-weight: normal; font-size: unset; line-height: normal;">{{ exp.summary }}</p>
             </li>
             {% endfor %}
           </ul>
         </article>
         <article class="skills">
           <p class="title">SKILLS</p>
-          <ul class="skill-list">
+          <ul class="skill-list" style="margin-left: 0;">
             {% for _ in profile.skills %}
             <li class="skill">
               <p class="name">{{ _.skill }}</p>

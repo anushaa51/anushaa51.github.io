@@ -15,7 +15,22 @@ theme_settings :
     experience :
       - start : August 2020
         end : Now
-        experience : Software Engineer, Target
+        experience : Software Engineer
+        place: Target
+        location: Bengaluru
+        summary: A summary of what I did, etc. <br/>Next line.
+      - start : August 2016
+        end : August 2020
+        experience : Undergraduate
+        place: PES University
+        location: Electronic City Campus, Bengaluru
+        summary: Bachelor of Engineering, Information Science & Engineering, 8.69 CGPA.
+      - start : May 2002
+        end : May 2016
+        experience : Student
+        place: HAL Public School
+        location: Bengaluru
+        summary: CBSE, 10th grade CGPA 10, 12th grade 93.2%.
     skills : 
       - skill : HTML5 & CSS
         value : 85  # Percent value
@@ -25,7 +40,7 @@ theme_settings :
   # Icons
   icons :
     email:  anusha50898@gmail.com
-    linkedin:  https://www.linkedin.com/in/anusha-b05/
+    linkedin:  https://www.linkedin.com/in/anushaa51/
     github: anushaa51
     gitlab: 
     bitbucket: 

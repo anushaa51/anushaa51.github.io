@@ -4,13 +4,14 @@ layout: page
 <div id="home">
   <div class="row">
     <!-- Post List -->
-    <section id="posts">
+    <section id="posts" style="width: 100%;">
       {% for post in site.posts %}
       <div class="post">
         <a href="{{ post.url | relative_url }}">
           <div class="post-wrap">
             <div class="text-warp">
               <h3 class="title">{{ post.title }}</h3>
+              <h5 style="font-weight: normal;">{{ post.subtitle }}</h5>
               <p class="excerpt">
                 {% if post.excerpt.size > 50 %}
                 {{ post.excerpt | strip_html | strip_newlines | truncatewords: 25, '...' }}
@@ -24,9 +25,7 @@ layout: page
                 </span>
                 <ul class="tag-wrap">
                   {% for tag in post.tags %}
-                  <a href="{{site.baseurl}}/tags#{{ tag | cgi_escape }}">
-                    <li class="tag-sm">{{ tag }}</li>
-                  </a>
+                  <li class="tag-sm">{{ tag }}</li>
                   {% endfor %}
                 </ul>
               </div>

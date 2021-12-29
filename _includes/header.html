@@ -12,8 +12,8 @@
       <a href="{{ site.url }}/projects">
         <li class="btn-nav">Projects</li>
       </a>
-      <a href="{{ site.url }}/blog">
-        <li class="btn-nav">Blog</li>
+      <a href="{{ site.url }}/achievements">
+        <li class="btn-nav">Achievements</li>
       </a>
       <!-- Projects -->
       {% elsif current[0] == 'projects' %}
@@ -24,8 +24,8 @@
         <li class="btn-nav">Resume</li>
       </a>
       <li class="current">Projects</li>
-      <a href="{{ site.url }}/blog">
-        <li class="btn-nav">Blog</li>
+      <a href="{{ site.url }}/achievements">
+        <li class="btn-nav">Achievements</li>
       </a>
       <!-- Default (landing) -->
       {% elsif current.size == 0 %}
@@ -38,10 +38,10 @@
       <a href="{{ site.url }}/projects">
         <li class="btn-nav">Projects</li>
       </a>
-      <a href="{{ site.url }}/blog">
-        <li class="btn-nav">Blog</li>
+      <a href="{{ site.url }}/achievements">
+        <li class="btn-nav">Achievements</li>
       </a>
-      <!-- Blog and all blog posts -->
+      <!-- achievements and all achievements posts -->
       {% else %}
       <a href="{{ site.url }}">
         <li class="btn-nav">Bio</li>
@@ -52,7 +52,7 @@
       <a href="{{ site.url }}/projects">
         <li class="btn-nav">Projects</li>
       </a>
-      <li class="current">Blog</li>
+      <li class="current">Achievements</li>
       {% endif %}
     </ul>
   </nav>
