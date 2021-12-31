@@ -177,3 +177,27 @@ a:link, a:visited, a:active, a:hover {
 	}
 
 }
+
+#home #posts .post {
+	.thumbnail {
+		width: 20%;
+	}
+	.post-wrap {
+		width: 80%;
+	}
+	@media (min-width: 992px){
+		.row {
+			flex-wrap: unset;
+		}
+    }
+	@media (max-width: 992px){
+		.thumbnail {
+			width: 70%;
+		}
+		.post-wrap {
+			width: 100%;
+			margin-top: 5px !important;
+			margin-bottom: 5px !important;
+		}
+	}
+}

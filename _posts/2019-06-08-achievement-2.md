@@ -2,8 +2,9 @@
 layout: post
 title: Sample Achievement 2
 subtitle : Which competition
-tags: [Certificate, Award, Co-curricular, etc]
+tags: [Certificate, Award, Co-curricular]
 author: Anusha A
+thumbnail: /assets/achievements/koreaSunset.jpg
 ---
 
 ![Image if exists]({{ site.baseurl }}/assets/achievements/koreaSunset.jpg)

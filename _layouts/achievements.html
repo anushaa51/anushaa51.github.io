@@ -8,6 +8,10 @@ layout: page
       {% for post in site.posts %}
       <div class="post">
         <a href="{{ post.url | relative_url }}">
+          <div class="row">
+          <div class="thumbnail" style="margin: auto;">
+            <img src="{{post.thumbnail}}" style="border-radius: 15px; width: 100%;"/>
+          </div>
           <div class="post-wrap">
             <div class="text-warp">
               <h3 class="title">{{ post.title }}</h3>
@@ -19,11 +23,11 @@ layout: page
                 {{ post.subtitle }}
                 {% endif %}
               </p>
-              <div>
-                <span class="meta">
+              <div class="row" style="flex-wrap: nowrap;">
+                <span class="meta" style="white-space:nowrap;">
                   {{ post.date | date: "%B %-d, %Y" }}
                 </span>
-                <ul class="tag-wrap">
+                <ul class="tag-wrap" style="line-height: 1em;">
                   {% for tag in post.tags %}
                   <li class="tag-sm">{{ tag }}</li>
                   {% endfor %}
@@ -36,6 +40,7 @@ layout: page
             </div>
             {% endif %}
           </div>
+        </div>
         </a>
       </div>
       {% endfor %}
