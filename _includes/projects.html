@@ -1,0 +1,46 @@
+<section id="project">
+  <div class="project-wrap">
+    <p class="title">PROJECTS</p>
+    <div class="card-container">
+      {% for _ in site.data.projects %}
+      {% assign project = _.project %}
+      {% assign id = id | plus: 1 %}
+      <div class="card-wrapper">
+        <a href="{{project.url}}">
+        <div class="card">
+          {% if project.image %}
+          <div>
+            <img style="width: 100%;" src="{{ site.url }}/assets/project/{{ project.image }}" alt="">
+          </div>
+          {% endif %}
+          <div class="text-wrap {% if project.image %}{% endif %}">
+            <div class="title-wrap">
+              <p class="date">{{ project.date }}</p>
+              <div class="title"><i class="fab fa-github"></i>&nbsp;&nbsp;{{ project.title }}</div>
+            </div>
+            <div class="meta">
+              {% if project.skills %}
+              &middot;
+              {% for skill in project.skills %}
+              <span>#{{ skill }}</span>
+              {% endfor %}
+              {% endif %}
+            </div>
+            <div class="description">{{ project.description }}</div>
+          </div>
+        </div>
+      </a>
+      </div>
+      <!-- Modal Box -->
+      {% if project.modal %}
+      {% include modal.html %}
+      {% endif %}
+      <!-- Modal Box -->
+      {% endfor %}
+    </div>
+  </div>
+  <div class="bg"></div>
+</section>
+
+<!-- modal -->
+<script type="text/javascript" src="{{ site.url }}/assets/js/modal.js"></script>

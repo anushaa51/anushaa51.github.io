@@ -1,0 +1,45 @@
+- project :
+    url : https://anushaa51.github.io/Crypticket/ # Full URL
+    image : "crypticket.jpg" # path: assets/project/
+    date : February 2019 - Completed
+    title : Crypticket
+    description : A fully offline-capable cryptographic ticket and password generation and management platform, built as a responsive Progressive Web App (PWA) using React, utilising EdDSA elliptic curve cryptography.
+
+- project :
+    url : https://github.com/anushaa51/wuasta/ # Full URL
+    image : "wuasta.jpg" # path: assets/project/
+    date : October 2017 - Completed
+    title : Wuasta
+    description : A predictive Alarm Assistant which pragmatically wakes you up at just the right time, taking into account real-time traffic conditions.
+
+- project :
+    url : https://github.com/anushaa51/accentrix/ # Full URL
+    image : "accentrix.jpg" # path: assets/project/
+    date : February 2020 - Completed
+    title : Accentrix
+    description : Web based Machine Learning application which performs accent conversion and classification through mapping of Mel Frequency Cepstral Coefficients (MFCC).
+
+- project :
+    url : https://github.com/anushaa51/LookUpBloodDB/ # Full URL
+    date : October 2018 - Completed
+    title : LookUpBloodDB
+    description : A database system aimed at consolidating blood available across branches and organisations, over the web.
+
+- project :
+    url : https://github.com/anushaa51/YTrendNet # Full URL
+    date : March 2019 - Completed
+    title : YTrendNet
+    description : Dual Implementation of Artificial Neural Networks to find how long a YouTube Video will stay trending.
+
+
+- project :
+    url : https://github.com/anushaa51/UnicodeBankDB # Full URL
+    date : April 2019 - Completed
+    title : UnicodeBankDB
+    description : A file based bank database management web app written in Java using Spark and Maven, with indexed variable length nested records, concurrency control, state transfer and Huffman Compression.
+
+- project :
+    url : https://github.com/anushaa51/Fog-Index # Full URL
+    date : May 2018 - Completed
+    title : FogIndex
+    description : Python implementation for calculating the Fog Index of a text document.

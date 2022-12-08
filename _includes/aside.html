@@ -1,0 +1,16 @@
+<!-- User Profile -->
+<div id="profile">
+  {% assign profile = site.theme_settings.profile %}
+  <a href="{{ site.baseurl }}">
+    <div class="img-wrap">
+      <img src="{{ site.baseurl }}/{{ profile.image }}" alt="profile-image">
+    </div>
+  </a>
+  <p class="username">{{ profile.username }}</p>
+  <p class="description">{{ profile.description }}</p>
+
+  <!-- Social icons from Font Awesome -->
+  <ul id="icons">
+    {% include icons.html %}
+  </ul>
+</div>

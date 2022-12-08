@@ -1,0 +1,31 @@
+---
+layout: page
+---
+<div id="home">
+    <div class="row justify-content-center">
+        <a href="{{ '/assets/resume.pdf' | absolute_url }}" download="Anusha A Resume.pdf">
+            <span class="tag">Download Resume</span>
+        </a>
+    </div>
+    <div class="row justify-content-center">
+        <div id="adobe-dc-view" style="width: 100%; pointer-events: none;"></div>
+        <script src="https://documentservices.adobe.com/view-sdk/viewer.js"></script>
+        <script type="text/javascript">
+            document.addEventListener("adobe_dc_view_sdk.ready", function () {
+                var adobeDCView = new AdobeDC.View({
+                    clientId: "cb596967801c42a9a1fa8d96963c2f73",
+                    divId: "adobe-dc-view"
+                });
+                adobeDCView.previewFile({
+                    content: { location: { url: "{{ '/assets/resume.pdf' | absolute_url }}" } },
+                    metaData: { fileName: "✓ Loaded" }
+                }, {
+                    embedMode: "IN_LINE",
+                    showDownloadPDF: false,
+                    showPrintPDF: false,
+                    showPageControls: false
+                });
+            });
+        </script>
+    </div>
+</div>

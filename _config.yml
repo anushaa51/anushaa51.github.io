@@ -1,0 +1,73 @@
+# Site Settings
+baseurl: ""
+url : "https://anushaa51.github.io"
+
+# Blog Settings
+theme_settings :
+  title : Anusha A
+  favicon : assets/favicon.ico
+
+  # Profile Settings
+  profile :
+    image : assets/img/portrait.jpg
+    username : Anusha Alangar
+    description : I might be small but you'd best believe I can do it all 🚀👽
+    experience :
+      - start : August 2020
+        end : Now
+        experience : Software Engineer
+        place: Target
+        location: Bengaluru
+        summary: Search | Backend / Fullstack Developer<br/><br/>•	As part of the Search Box and Facets team, I work to optimise and improve search autocomplete, query normalisation and completion and product facet suggestion optimisations on the Target website, working on a wide variety of tech stacks incorporating Java, Kotlin, Kafka, GCP and a variety of cloud native technologies.<br/><br/>•	Improved user query suggestion ranking leveraging search prefix prioritisation, infix matching, fuzzy search and look-up tries, resulting in higher peak Transactions Per Hour.<br/><br/>•	Built various services such as a Tcin Sequence Generator, an efficient distributed product locator that identifies the store location of any given product across all Target outlets, and a service that consolidates product information from various Kafka clusters as well as Redis cache in real time for high data availability during peak.<br/><br/>•	Worked on the migration of Target’s tech stack from Java / Spring Boot / MySQL to Kotlin / Micronaut / PostgreSQL, and to a distributed microservice based architecture, being instrumental in developing the company wide employee onboarding platform.<br/><br/>•	Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms.
+      - start : Jan 2020
+        end : Feb 2020
+        experience : Web Development Internship
+        place: Donti Technologies
+        location: Bengaluru
+        summary: Fullstack Developer<br/><br/>•	Developed a new company website with a comprehensive new interface using React, including a new shopping cart system.
+      - start : August 2016
+        end : August 2020
+        experience : Undergraduate
+        place: PES University
+        location: Electronic City Campus, Bengaluru
+        summary: Bachelor of Engineering<br/>Computer Science and Engineering | 8.7 CGPA.
+      - start : May 2014
+        end : May 2016
+        experience : Pre-University
+        place: HAL Public School
+        location: Bengaluru
+        summary: CBSE 12th grade | 93.2%.
+      - start : May 2002
+        end : May 2014
+        experience : High School
+        place: HAL Public School
+        location: Bengaluru
+        summary: CBSE 10th grade | CGPA 10.
+    skills : 
+      - skill : JAVA / KOTLIN
+        value : 90  # Percent value
+      - skill : WEB DEVELOPMENT
+        value : 85  # Percent value
+        
+  # Icons
+  icons :
+    email:  anusha50898@gmail.com
+    linkedin:  https://www.linkedin.com/in/anushaa51/
+    github: anushaa51
+    gitlab: 
+    bitbucket: 
+    google_plus:
+    youtube:
+    facebook:
+    instagram:
+
+  # Disqus
+  disqus_shortname :
+
+# Build Ssttings
+sass:
+  sass_dir: _sass
+  style: :compressed
+gems: [jekyll-paginate]
+bootstrap:
+  assets: true

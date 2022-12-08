@@ -1,0 +1,59 @@
+{% assign _url = page.url | split: "/" %}
+{% assign current = _url[-1] | split: "." %}
+<header>
+  <nav>
+    <ul>
+      {% if current[0] == 'resume' %}
+      <!-- Resume -->
+      <a href="{{ site.url }}">
+        <li class="btn-nav">Bio</li>
+      </a>
+      <li class="current">Resume</li>
+      <a href="{{ site.url }}/projects">
+        <li class="btn-nav">Projects</li>
+      </a>
+      <a href="{{ site.url }}/achievements">
+        <li class="btn-nav">Achievements</li>
+      </a>
+      <!-- Projects -->
+      {% elsif current[0] == 'projects' %}
+      <a href="{{ site.url }}">
+        <li class="btn-nav">Bio</li>
+      </a>
+      <a href="{{ site.url }}/resume">
+        <li class="btn-nav">Resume</li>
+      </a>
+      <li class="current">Projects</li>
+      <a href="{{ site.url }}/achievements">
+        <li class="btn-nav">Achievements</li>
+      </a>
+      <!-- Default (landing) -->
+      {% elsif current.size == 0 %}
+      <a href="{{ site.url }}">
+        <li class="current btn-nav">Bio</li>
+      </a>
+      <a href="{{ site.url }}/resume">
+        <li class="btn-nav">Resume</li>
+      </a>
+      <a href="{{ site.url }}/projects">
+        <li class="btn-nav">Projects</li>
+      </a>
+      <a href="{{ site.url }}/achievements">
+        <li class="btn-nav">Achievements</li>
+      </a>
+      <!-- achievements and all achievements posts -->
+      {% else %}
+      <a href="{{ site.url }}">
+        <li class="btn-nav">Bio</li>
+      </a>
+      <a href="{{ site.url }}/resume">
+        <li class="btn-nav">Resume</li>
+      </a>
+      <a href="{{ site.url }}/projects">
+        <li class="btn-nav">Projects</li>
+      </a>
+      <li class="current">Achievements</li>
+      {% endif %}
+    </ul>
+  </nav>
+</header>

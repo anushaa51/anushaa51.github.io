@@ -1,0 +1,54 @@
+---
+layout: page
+---
+<div id="home">
+  <div class="row">
+    <!-- Aside Navigation  -->
+    <aside id="aside" class="col-md-4">
+      {% include aside.html %}
+    </aside>
+
+    <!-- career section -->
+    <div id="protfolio" class="col-md-8">
+      <section id="career">
+        <article>
+          <p class="title">ABOUT ME</p>
+          <p>
+            Hey, I’m Anusha, and this is a small window into who I am. You’d typically find me with my nose in a book in my free time. I have been reading novels since a very young age, and have also dabbled in writing, myself. When I was 15, I wrote a fiction novel called ‘Fatal Souvenirs’. All of this led me to develop a deep love for literature and languages. I find the sheer number of languages spoken, and the differences in their structures to be quite fascinating. I’m learning to speak Spanish as I consider it to be one of the most beautiful languages, and aim to be a polyglot with several languages in my repertoire.
+            <br/><br/>I’m a strong advocate of being active and the positive effects of exercise on one’s body and mind. I was an athlete in school, and I currently practice Yoga to stay healthy. I’m always up for any sport, be it a board game like chess, something physical like volleyball, or even trivia. I’m a tree hugger who enjoys the occasional hike over the weekend to simply savor the serenity of nature away from technology.
+            <br/><br/>We have one life, so we should make the best of it. I wish to travel and see the world, experience new cultures and create new memories. I want to conquer my fear of swimming, and be someone to be proud of. I aspire to build my career in the field where my two passions, i.e. language and computers intersect. I believe a major part of the future of technology lies here, and that the benefits of a computer that can comprehend and fluently converse in languages are enormous.
+          </p>
+        </article>
+        <article class="exper">
+          <p class="title">EXPERIENCE</p>
+          <ul class="exper-list" style="margin-left: 0;">
+            {% for exp in profile.experience %}
+            <li class="meta">
+              <p class="date">{{ exp.start }} - {{ exp.end }}</p>
+              <p style="font-weight: normal; margin-top: 10px; margin-bottom: 10px;">{{ exp.experience }}</p>
+              <p class="description">{{ exp.place }}</p>
+              <p style="font-weight: normal; font-size: small;">{{exp.location}}</p>
+              <p style="margin-top: 15px; font-weight: normal; font-size: unset; line-height: normal;">{{ exp.summary }}</p>
+            </li>
+            {% endfor %}
+          </ul>
+        </article>
+        <!-- <article class="skills">
+          <p class="title">SKILLS</p>
+          <ul class="skill-list" style="margin-left: 0;">
+            {% for _ in profile.skills %}
+            <li class="skill">
+              <p class="name">{{ _.skill }}</p>
+              <div class="progress">
+                <div class="progress-bar" style="width: {{ _.value }}%">
+                  <div class="progress-value">{{ _.value }}%</div>
+                </div>
+              </div>
+            </li>
+            {% endfor %}
+          </ul>
+        </article> -->
+      </section>
+    </div>
+  </div>
+</div>
