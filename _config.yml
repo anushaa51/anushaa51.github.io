@@ -13,8 +13,14 @@ theme_settings :
     username : Anusha Alangar
     description : I might be small but you'd best believe I can do it all 🚀👽
     experience :
+      - start : August 2023
+        end : Present
+        experience : Graduate
+        place: Arizona State University
+        location: Tempe, USA
+        summary: Master of Science<br/>Computer Science
       - start : August 2020
-        end : Now
+        end : June 2023
         experience : Software Engineer
         place: Target
         location: Bengaluru
@@ -43,19 +49,19 @@ theme_settings :
         place: HAL Public School
         location: Bengaluru
         summary: CBSE 10th grade | CGPA 10.
-    skills : 
+    skills :
       - skill : JAVA / KOTLIN
         value : 90  # Percent value
       - skill : WEB DEVELOPMENT
         value : 85  # Percent value
-        
+
   # Icons
   icons :
     email:  anusha50898@gmail.com
     linkedin:  https://www.linkedin.com/in/anushaa51/
     github: anushaa51
-    gitlab: 
-    bitbucket: 
+    gitlab:
+    bitbucket:
     google_plus:
     youtube:
     facebook:
