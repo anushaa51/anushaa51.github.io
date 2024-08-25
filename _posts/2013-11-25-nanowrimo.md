@@ -3,7 +3,7 @@ layout: post
 title: Winner
 subtitle : NaNoWriMo
 tags: [Award, Co-curricular]
-author: Anusha A
+author: Anusha Alangar
 thumbnail: /assets/achievements/nanowrimo.jpg
 ---
 

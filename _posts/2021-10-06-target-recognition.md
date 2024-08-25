@@ -3,7 +3,7 @@ layout: post
 title: Recognition of Excellence
 subtitle : Target Corporation
 tags: [Award, Recognition]
-author: Anusha A
+author: Anusha Alangar
 thumbnail: /assets/achievements/target-recognition.png
 ---
 

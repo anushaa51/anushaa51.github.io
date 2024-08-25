@@ -3,7 +3,7 @@ layout: post
 title: Kanteerava Athletics Meet
 subtitle : Youngsters Sports Club
 tags: [Recognition, Sports]
-author: Anusha A
+author: Anusha Alangar
 thumbnail: /assets/achievements/kanteerava.jpg
 ---
 

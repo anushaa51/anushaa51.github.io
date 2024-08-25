@@ -3,7 +3,7 @@ layout: post
 title: 2nd Place
 subtitle : Hackerrank Computer Programming Competition
 tags: [Award]
-author: Anusha A
+author: Anusha Alangar
 thumbnail: /assets/achievements/hackerrank-competition.jpg
 ---
 
