@@ -3,7 +3,7 @@
     image : "crypticket.jpg" # path: assets/project/
     date : February 2019 - Completed
     title : Crypticket
-    description : A fully offline-capable cryptographic ticket and password generation and management platform, built as a responsive Progressive Web App (PWA) using React, utilising EdDSA elliptic curve cryptography.
+    description : An offline capable cryptographic ticket generation and authentication platform using service workers and local storage caching. Built as a responsive PWA from scratch using React, utilizing EdDSA elliptic curve cryptography.
 
 - project :
     url : https://github.com/anushaa51/wuasta/ # Full URL
@@ -17,19 +17,19 @@
     image : "accentrix.jpg" # path: assets/project/
     date : February 2020 - Completed
     title : Accentrix
-    description : Web based Machine Learning application which performs accent conversion and classification through mapping of Mel Frequency Cepstral Coefficients (MFCC).
+    description : Machine learning system for performing accent conversion and classification through mapping MFCCs vectors describing the short-term power spectrum of sound, including a React based web interface.
 
 - project :
     url : https://github.com/anushaa51/LookUpBloodDB/ # Full URL
     date : October 2018 - Completed
     title : LookUpBloodDB
-    description : A database system aimed at consolidating blood available across branches and organisations, over the web.
+    description : A comprehensive platform using React and a RESTful Flask and SQL database aimed at locating the nearest blood bank by consolidating availability and interfacing with blood donation databases across organizations
 
 - project :
     url : https://github.com/anushaa51/YTrendNet # Full URL
     date : March 2019 - Completed
     title : YTrendNet
-    description : Dual Implementation of Artificial Neural Networks to find how long a YouTube Video will stay trending.
+    description : Analyzed and performed a deep dive into the Kaggle Trending YouTube Video Statistics dataset, leveraging feature attribution and encoding techniques to transform the results of sentiment analysis for training an Artificial Neural Network that infers how long a YouTube video stays trending
 
 
 - project :

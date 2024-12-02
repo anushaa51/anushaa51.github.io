@@ -1,0 +1,208 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Anusha Alangar} \\ \vspace{1pt}
+    \small 480-906-5917 $|$ \href{mailto:anushalngr@gmail.com}{\underline{anushalngr@gmail.com}} $|$
+    \href{https://linkedin.com/in/anushaa51}{\underline{linkedin.com/in/anushaa51}} $|$
+    \href{https://anushaa51.github.io}{\underline{anushaa51.github.io}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Arizona State University}{Tempe, AZ}
+      {Master of Science in Computer Science | GPA: 4.0}{Aug. 2023 -- May 2025}
+    \resumeSubheading
+      {PES University}{Bangalore, KA}
+      {Bachelor of Engineering in Computer Science}{Aug. 2016 -- Aug 2020}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+      \resumeSubheading
+      {National Basketball Association (NBA)}{June 2024 -- Aug. 2024}
+      {Software Engineer Intern}{New York City, NY}
+      \resumeItemListStart
+        \resumeItem{Worked in the team that builds and maintains functionality on NBA.com, covering everything from NBA news, advertising, athlete catalogs to live scores, subscriptions and live streaming}
+        \resumeItem{Executed code refactors including Tailwind to pure CSS migration, moving common serialization functions to a separate library, consolidating core APIs and debugging sign-in and auth flow bugs for League Pass subscriptions}
+        \resumeItem{Updated various components on NBA.com, fixing issues in concurrent sessions on VODs with tests and coverage}
+        \resumeItem{tweaked CDN and SEO infrastructure, created a framework for controlling advertising criteria at a more granular level and created several pipelines to synchronize build artifacts in different deployment environments}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Target Corporation}{Aug. 2020 -- June 2023}
+      {Software Engineer}{Bangalore, KA}
+      \resumeItemListStart
+        \resumeItem{As part of the Search Box and Facets team, I worked to optimize and improve search autocomplete, query normalization, query completion and product facet suggestions on the Target website}
+        \resumeItem{Improved user query suggestion ranking leveraging search prefix prioritization, fuzzy matching and look-up tries, resulting in higher peak transactions per second}
+        \resumeItem{Built Tcin Sequence Generator, an efficient product locator that identifies store locations of any given product across all Target outlets leveraging Kafka and GCP}
+        \resumeItem{Developed a service that consolidates product information from different Kafka clusters as well as Redis cache in real time for high data availability during peak}
+        \resumeItem{Worked on migrating Target’s tech stack from Java, Spring and MySQL to a distributed microservice based architecture using Kotlin, Micronaut and PostgreSQL}
+        \resumeItem{Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms}
+      \resumeItemListEnd
+
+
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+        \resumeItem{\textbf{Accentrix}{: Machine learning system for performing accent conversion and classification through mapping MFCCs vectors describing the short-term power spectrum of sound, including a React based web interface}}
+        \resumeItem{\textbf{Crypticket}{: An offline capable cryptographic ticket generation and authentication platform using service workers and local storage caching. Built as a responsive PWA from scratch using React, utilizing EdDSA elliptic curve cryptography}}
+        \resumeItem{\textbf{LookUpBloodDB}{: A comprehensive platform using React and a RESTful Flask and SQL database aimed at locating the nearest blood bank by consolidating availability and interfacing with blood donation databases across organizations}}
+        \resumeItem{\textbf{YTrendNet}{: Analyzed and performed a deep dive into the Kaggle Trending YouTube Video Statistics dataset, leveraging feature attribution and encoding techniques to transform the results of sentiment analysis for training an Artificial Neural Network that infers how long a YouTube video stays trending}}
+    \resumeSubHeadingListEnd
+
+
+%-----------Awards & Honors-----------
+\section{Awards \& Honors}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{Recognition Award} $|$ \emph{Target Corporation}}{Oct. 2021}
+          \resumeItemListStart
+            \resumeItem{Innovated and built an end to end implementation of the Tcin Sequence Generator in the enterprise search pipeline}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: C, C++, Java, Kotlin, Python, Scala, Go, JavaScript, TypeScript, Maven, Gradle, NPM, Drone, Bash} \\
+     \textbf{Frameworks}{: Node, React, Next.js, Tailwind, Spring Boot, Micronaut, Flask, gRPC, Protobuf, Jest, JUnit, Cypress} \\
+     \textbf{Cloud}{: AWS EC2, EKS, S3, Lambda, GCP, Grafana, Elastic Search, Kibana, Docker, Kubernetes, Miro, Figma, Git} \\
+     \textbf{Data}{: Tomcat, Cassandra, Hadoop, Kafka, Solr, InfluxDB, PostgreSQL, Redis, MongoDB, ZooKeeper, Prometheus}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
