@@ -27,7 +27,7 @@ theme_settings :
         summary: Master of Science<br/>Computer Science
       - start : August 2020
         end : June 2023
-        experience : Software Engineer
+        experience : Machine Learning Engineer
         place: Target
         location: Bangalore, KA
         summary: • Search Box and Facets team is responsible for AI powered search and recommendation on Target's platform, where I worked to optimize and improve search autocomplete, query normalization, query completion and facet suggestions<br/><br/>•Working with Java, Kotlin, React, Docker and Kubernetes, I improved user query suggestion ranking leveraging search prefix prioritization, fuzzy matching and look-up tries, resulting in higher peak transactions per second<br/><br/>•Developed an end-to-end Tcin Sequence Generator, an efficient product locator that identifies store locations of any product across all Target outlets leveraging Kafka and the Google Cloud Platform<br/><br/>•Built microservices for consolidating product information from different Kafka clusters as well as Redis cache in real-time for high data availability during peak hours, and migrated sections of Target’s tech stack from Java, Spring and MySQL to a distributed microservice based architecture using Kotlin, Micronaut and PostgreSQL<br/><br/>•Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms

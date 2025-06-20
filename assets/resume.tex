@@ -64,7 +64,7 @@
 % Custom commands
 \newcommand{\resumeItem}[1]{
   \item\small{
-    {#1 \vspace{-2pt}}
+    {#1 \vspace{-1pt}}
   }
 }
 
@@ -112,11 +112,10 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Anusha Alangar} \\ \vspace{1pt}
+    \textbf{\Huge \scshape Anusha Alangar} \\ \vspace{3pt}
     \small 480-906-5917 $|$ \href{mailto:anushalngr@gmail.com}{\underline{anushalngr@gmail.com}} $|$
     \href{https://linkedin.com/in/anushaa51}{\underline{linkedin.com/in/anushaa51}} $|$
-    \href{https://anushaa51.github.io}{\underline{anushaa51.github.io}} $|$
-    \small Austin, TX
+    \href{https://anushaa51.github.io}{\underline{anushaa51.github.io}}
 \end{center}
 
 
@@ -124,11 +123,8 @@
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
+      {Master of Science in Computer Science \textnormal{\textit{| GPA: 4.0}}}{Aug. 2023 -- May 2025}
       {Arizona State University}{Tempe, AZ}
-      {Master of Science in Computer Science | GPA: 4.0}{Aug. 2023 -- May 2025}
-    \resumeSubheading
-      {PES University}{Bangalore, KA}
-      {Bachelor of Engineering in Computer Science}{Aug. 2016 -- Aug 2020}
   \resumeSubHeadingListEnd
 
 
@@ -137,71 +133,19 @@
   \resumeSubHeadingListStart
 
       \resumeSubheading
-      {NBA}{New York City, NY}
       {Software Engineer Intern}{June 2024 -- Aug. 2024}
+      {National Basketball Association (NBA)}{New York City, NY}
       \resumeItemListStart
-        \resumeItem{Working in the Direct-to-consumer Product Tech and Ops org, I built and maintained features on NBA.com, covering everything from sports news, advertising, athlete catalogs to live scores, subscriptions and live streaming}
-        \resumeItem{Performed codebase migrations and component refactors, rewriting and abstracting serialization into a separate library, consolidating core APIs and debugging sign-in and auth flow bugs for League Pass subscriptions}
-        \resumeItem{Fixed issues with SEO, CDN and concurrent sessions with VOD streaming, created a framework for granular control over ads criteria, along with several pipelines to synchronize build artifacts across deployment environments}
+        \resumeItem{Worked on B2C features including sports news, ads, catalogs, scores, subscriptions and streaming on NBA.com}
+        \resumeItem{Performed Next.js and Tailwind codebase migrations, abstracting serialization into separate packages, and refactored core authentication APIs for League Pass subscriptions}
+        \resumeItem{Resolved bugs with concurrent VOD streaming, created a framework for granular control over ads serving logic}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Target}{Bangalore, KA}
-      {Software Engineer}{Aug. 2020 -- June 2023}
+      {Machine Learning Engineer}{Aug. 2020 -- June 2023}
+      {Target Corporation}{Bangalore, KA}
       \resumeItemListStart
-        \resumeItem{Search Box and Facets team is responsible for AI powered search and recommendation on Target's platform, where I worked to optimize and improve search autocomplete, query normalization, query completion and facet suggestions}
-        \resumeItem{Working with Java, Kotlin, React, Docker and Kubernetes, I improved user query suggestion ranking leveraging search prefix prioritization, fuzzy matching and look-up tries, resulting in higher peak transactions per second}
-        \resumeItem{Developed an end-to-end Tcin Sequence Generator, an efficient product locator that identifies store locations of any product across all Target outlets leveraging Kafka and the Google Cloud Platform}
-        \resumeItem{Built microservices for consolidating product information from different Kafka clusters as well as Redis cache in real-time for high data availability during peak hours, and migrated sections of Target’s tech stack from Java, Spring and MySQL to a distributed microservice based architecture using Kotlin, Micronaut and PostgreSQL}
-        \resumeItem{Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms}
-      \resumeItemListEnd
-
-
-% -----------Multiple Positions Heading-----------
-%    \resumeSubSubheading
-%     {Software Engineer I}{Oct 2014 - Sep 2016}
-%     \resumeItemListStart
-%        \resumeItem{Apache Beam}
-%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
-%     \resumeItemListEnd
-%    \resumeSubHeadingListEnd
-%-------------------------------------------
-
-  \resumeSubHeadingListEnd
-
-
-%-----------PROJECTS-----------
-\section{Projects}
-    \resumeSubHeadingListStart
-        \resumeItem{\textbf{Accentrix}{: Machine learning system for performing accent conversion and classification through mapping MFCCs vectors describing the short-term power spectrum of sound, including a React based web interface}}
-        \resumeItem{\textbf{Crypticket}{: An offline capable cryptographic ticket generation and authentication platform using service workers and local storage caching. Built as a responsive PWA from scratch using React, utilizing EdDSA elliptic curve cryptography}}
-        \resumeItem{\textbf{LookUpBloodDB}{: A comprehensive platform using React and a RESTful Flask and SQL database aimed at locating the nearest blood bank by consolidating availability and interfacing with blood donation databases across organizations}}
-        \resumeItem{\textbf{MidLLaMAI}{: Benchmarking suite for evaluating performance of compressed LLaMA models, focused on finding an optimal balance between different pruning and quantization techniques with varying number of LLM model parameters}}
-    \resumeSubHeadingListEnd
-
-
-%-----------Awards & Honors-----------
-\section{Awards \& Honors}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{Recognition Award} $|$ \emph{Target}}{Oct. 2021}
-          \resumeItemListStart
-            \resumeItem{Built an innovative end-to-end implementation of the Tcin Sequence Generator in the enterprise search pipeline}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C, C++, Java, Kotlin, Python, Scala, Go, JavaScript, TypeScript, Maven, Gradle, NPM, Drone, Bash, Git} \\
-     \textbf{Frameworks}{: Node, React, Next.js, Tailwind, Spring Boot, Micronaut, Flask, gRPC, Protobuf, Jest, JUnit, Cypress} \\
-     \textbf{Cloud}{: AWS EC2, EKS, S3, Lambda, GCP, Grafana, Elastic Search, Kibana, Docker, Kubernetes, Miro, Figma} \\
-     \textbf{Data}{: Tomcat, Cassandra, Hadoop, Kafka, Solr, InfluxDB, PostgreSQL, Redis, MongoDB, ZooKeeper, Prometheus}
-    }}
- \end{itemize}
-
-
-%-------------------------------------------
-\end{document}
+        \resumeItem{Search team at Target is responsible for AI powered search and recommendation on Target.com, managing the entire lifecycle from search input and autocomplete, to query completion, normalization, and redirection}
+        \resumeItem{Built and maintained enterprise grade cross-functional microservices touching Java, Kotlin, React, Docker, Kubernetes and Elasticsearch, along with associated observability and ops}
+        \resumeItem{Improved user query suggestion ranking by leveraging search prefix prioritization, fuzzy matching, look-up tries and tensor decomposition, leading to large improvements in peak search transaction throughput}
+        \resumeItem{Productionized a Kafka based Tcin Sequence Generator on GCP, serving as an efficient inventory locator that identifies stores containing inventory of a product SKU across all Target outlets}
