@@ -54,7 +54,7 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
+  \vspace{-5pt}\scshape\raggedright\large
 }{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
@@ -106,11 +106,6 @@
 \begin{document}
 
 %----------HEADING----------
-% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
-%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
-%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
-% \end{tabular*}
-
 \begin{center}
     \textbf{\Huge \scshape Anusha Alangar} \\ \vspace{3pt}
     \small 480-906-5917 $|$ \href{mailto:anushalngr@gmail.com}{\underline{anushalngr@gmail.com}} $|$
@@ -119,13 +114,16 @@
 \end{center}
 
 
-%-----------EDUCATION-----------
-\section{Education}
-  \resumeSubHeadingListStart
-    \resumeSubheading
-      {Master of Science in Computer Science \textnormal{\textit{| GPA: 4.0}}}{Aug. 2023 -- May 2025}
-      {Arizona State University}{Tempe, AZ}
-  \resumeSubHeadingListEnd
+%-----------PROGRAMMING SKILLS-----------
+\section{Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages \& Tools}{: C/C++, Java, Kotlin, Python, Go, JavaScript, Gradle, Bazel, Jenkins} \\
+     \textbf{Frameworks}{: Node.js, React, GraphQL, Next.js, Spring Boot, Micronaut, FastAPI, gRPC, Protobuf} \\
+     \textbf{Cloud}{: AWS EC2, EKS, S3, Lambda, Grafana, Elastic Search, Kibana, Docker, Kubernetes} \\
+     \textbf{Data}{: Kafka, Cassandra, Hadoop, PostgreSQL, Redis, MongoDB, ZooKeeper, InfluxDB, Prometheus}
+    }}
+ \end{itemize}
 
 
 %-----------EXPERIENCE-----------
@@ -133,24 +131,31 @@
   \resumeSubHeadingListStart
 
       \resumeSubheading
-      {Software Engineer Intern}{June 2024 -- Aug. 2024}
+      {AI Researcher}{July 2025 -- Present}
+      {VISA Research Lab - Arizona State University}{Tempe, AZ}
+      \resumeItemListStart
+        \resumeItem{Researching social health recommendation agents using OpenAI models, focusing on adaptive personalization}
+        \resumeItem{Designing solutions for long term memory context retrieval with practical applications in Retrieval-Augmented Generation (RAG) for knowledge grounding and dialogue coherence}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Software Engineering Intern}{June 2024 -- Aug 2024}
       {National Basketball Association (NBA)}{New York City, NY}
       \resumeItemListStart
-        \resumeItem{Worked on B2C features including sports news, ads, catalogs, scores, subscriptions and streaming on NBA.com}
+        \resumeItem{Worked on B2C features including Sports News, Ads, Catalogs, Scores, Subscriptions and streaming on NBA.com}
         \resumeItem{Performed Next.js and Tailwind codebase migrations, abstracting serialization into separate packages, and refactored core authentication APIs for League Pass subscriptions}
         \resumeItem{Resolved bugs with concurrent VOD streaming, created a framework for granular control over ads serving logic}
       \resumeItemListEnd
 
     \resumeSubheading
-      {Software Engineer}{Aug. 2020 -- June 2023}
+      {R\&D Software Engineer}{Aug 2020 -- June 2023}
       {Target Corporation}{Bangalore, KA}
       \resumeItemListStart
         \resumeItem{Search team at Target is responsible for AI powered search and recommendation on Target.com, managing the entire lifecycle from search input and autocomplete, to query completion, normalization, and redirection}
         \resumeItem{Built and maintained enterprise grade cross-functional microservices touching Java, Kotlin, React, Docker, Kubernetes and Elasticsearch, along with associated observability and ops}
         \resumeItem{Improved user query suggestion ranking by leveraging search prefix prioritization, fuzzy matching, look-up tries and tensor decomposition, leading to large improvements in peak search transaction throughput}
-        \resumeItem{Productionized a Kafka based Tcin Sequence Generator on GCP, serving as an efficient inventory locator that identifies stores containing inventory of a product SKU across all Target outlets}
-        \resumeItem{Developed pipelines for consolidating product information from different Kafka clusters and Redis cache in real-time for high data availability during peak hours}
-        \resumeItem{Migrated sections of Target’s tech stack from Java, Spring and MySQL to a distributed architecture using Kotlin, Micronaut and PostgreSQL}
+        \resumeItem{Productionized a Kafka based Tcin Sequence Generator, serving as an efficient inventory locator that identifies stores containing inventory of a product SKU across all Target outlets}
+        \resumeItem{Built pipelines to consolidate Kafka clusters and Redis cache in real-time for high availability during peak hours, and migrated sections of Target’s tech stack from Java, Spring and MySQL to Kotlin, Micronaut and PostgreSQL}
         \resumeItem{Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms}
       \resumeItemListEnd
 
@@ -171,10 +176,10 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
-        \resumeItem{\textbf{MidLLaMAI}{: Benchmarking suite for evaluating performance of compressed LLaMA models, focused on finding an optimal balance between different pruning and quantization techniques with varying number of LLM model parameters}}
-        \resumeItem{\textbf{Crypticket}{: An offline capable cryptographic ticket generation and authentication platform using service workers and local storage caching. Built as a responsive PWA from scratch using React, utilizing EdDSA elliptic curve cryptography}}
-        \resumeItem{\textbf{Accentrix}{: A system for accent conversion and classification through mapping MFCCs vectors describing the short-term power spectrum of sound, including a React based web interface}}
-        \resumeItem{\textbf{LookUpBloodDB}{: A platform aimed at locating the nearest blood bank by consolidating availability and interfacing with blood donation databases across organizations, built with Flask and an SQL database exposing a REST API}}
+        \resumeItem{\textbf{MidLLaMAI}{: Benchmarking suite for evaluating performance of compressed LLaMA models, focused on finding an optimal balance between different pruning and quantization techniques with varying model sizes}}
+        \resumeItem{\textbf{Crypticket}{: An offline capable cryptographic ticket generation and authentication platform using service workers and local storage caching. Built as a responsive PWA using React, utilizing EdDSA elliptic curve cryptography}}
+        \resumeItem{\textbf{Accentrix}{: A system built with TensorFlow for accent conversion and classification through mapping MFCCs vectors describing the short-term power spectrum of sound, including a React based web interface}}
+        \resumeItem{\textbf{LookUpBloodDB}{: Unified platform for locating the nearest blood bank with availability by interfacing with and consolidating blood donation databases across organizations, built with FastAPI and MySQL, exposed as a REST API}}
     \resumeSubHeadingListEnd
 
 
@@ -188,17 +193,13 @@
           \resumeItemListEnd
     \resumeSubHeadingListEnd
 
-
-%-----------PROGRAMMING SKILLS-----------
-\section{Technical Skills}
- \begin{itemize}[leftmargin=0.15in, label={}]
-    \small{\item{
-     \textbf{Languages}{: C, C++, Java, Python, Kotlin, Scala, Go, JavaScript, TypeScript, Maven, Gradle, NPM, Drone, Bash, Git} \\
-     \textbf{Frameworks}{: Node, React, Next.js, Tailwind, Spring Boot, Micronaut, Flask, gRPC, Protobuf, Jest, JUnit, Cypress} \\
-     \textbf{Cloud}{: AWS EC2, EKS, S3, Lambda, GCP, Grafana, Elastic Search, Kibana, Docker, Kubernetes, Miro, Figma} \\
-     \textbf{Data}{: Tomcat, Cassandra, Hadoop, Kafka, Solr, InfluxDB, PostgreSQL, Redis, MongoDB, ZooKeeper, Prometheus}
-    }}
- \end{itemize}
+ %-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science \textnormal{\textit{| GPA: 4.0}}}{Aug. 2023 -- May 2025}
+      {Arizona State University}{Tempe, AZ}
+  \resumeSubHeadingListEnd
 
 
 %-------------------------------------------
