@@ -15,7 +15,7 @@ theme_settings :
     experience :
       - start : July 2025
         end : Present
-        experience : AI Researcher
+        experience : Research Assistant
         place: VISA Research Lab - Arizona State University
         location: Remote
         summary: • Researching social health recommendation agents using OpenAI models, focusing on adaptive personalization<br/><br/>• Designing solutions for long term memory context retrieval with practical applications in Retrieval-Augmented Generation (RAG) for knowledge grounding and dialogue coherence
