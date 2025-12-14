@@ -20,12 +20,6 @@
     description : Machine learning system for performing accent conversion and classification through mapping MFCCs vectors describing the short-term power spectrum of sound, including a React based web interface.
 
 - project :
-    url : https://github.com/anushaa51/LookUpBloodDB/ # Full URL
-    date : October 2018 - Completed
-    title : LookUpBloodDB
-    description : A comprehensive platform using React and a RESTful Flask and SQL database aimed at locating the nearest blood bank by consolidating availability and interfacing with blood donation databases across organizations
-
-- project :
     url : https://github.com/anushaa51/YTrendNet # Full URL
     date : March 2019 - Completed
     title : YTrendNet

@@ -15,16 +15,16 @@ theme_settings :
     experience :
       - start : July 2025
         end : Present
-        experience : Research Assistant
-        place: VISA Research Lab - Arizona State University
+        experience : AI Research Assistant
+        place: VISA Research Lab (ASU)
         location: Remote
-        summary: • Researching social health recommendation agents using OpenAI models, focusing on adaptive personalization<br/><br/>• Designing solutions for long term memory context retrieval with open-source MCPs and Agentic RAG, leveraging LangChain for knowledge grounding and dialogue coherence
+        summary: • Aiding PhD research into social health recommendation agents focusing on LLM based adaptive personalization<br/><br/>• Working on long term memory context retrieval with open-source MCPs and Agentic RAG, leveraging CrewAI
       - start : June 2024
         end : August 2024
         experience : Software Engineering Intern
         place: National Basketball Association (NBA)
         location: New York City, NY
-        summary: • Worked on B2C features including Sports News, Ads, Catalogs, Scores, Subscriptions and streaming on NBA.com<br/><br/>• Performed Next.js and Tailwind codebase migrations, abstracting serialization into separate packages, and refactored core authentication APIs for League Pass subscriptions<br/><br/>• Resolved bugs with concurrent VOD streaming, created a framework for granular control over ads serving logic<br/><br/>• Improved user query suggestion ranking by leveraging search prefix prioritization, fuzzy matching, look-up tries and tensor decomposition, leading to large improvements in peak search transaction throughput<br/><br/>• Productionized a Kafka based Tcin Sequence Generator, serving as an efficient inventory locator that identifies stores containing inventory of a product SKU across all Target outlets<br/><br/>• Built pipelines to consolidate Kafka clusters and Redis cache in real-time for high availability during peak hours, and migrated sections of Target’s tech stack from Java, Spring and MySQL to Kotlin, Micronaut and PostgreSQL<br/><br/>• Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms
+        summary: • Worked on core frontend infrastructure for Sports News, Ads, Catalogs, Scores and Subscriptions on NBA.com<br/><br/>• Performed Tailwind to CSS codebase migrations and abstracted JavaScript serialization into separate packages<br/><br/>• Refactored core Python authentication REST APIs for League Pass subscriptions, and created a framework for granular control over ads serving logic in GraphQL
       - start : August 2023
         end : Present
         experience : Graduate
@@ -36,7 +36,7 @@ theme_settings :
         experience : Software Engineer
         place: Target Corporation
         location: Bangalore, KA
-        summary: • Search team at Target is responsible for AI powered search and recommendation on Target.com, managing the entire lifecycle from search input and autocomplete, to query completion, normalization, and redirection<br/><br/>• Built and maintained enterprise grade cross-functional microservices touching Java, Kotlin, React, Docker, Kubernetes and Elasticsearch, along with associated observability and ops<br/><br/>• Improved user query suggestion ranking by leveraging search prefix prioritization, fuzzy matching, look-up tries and tensor decomposition, leading to large improvements in peak search transaction throughput<br/><br/>• Productionized a Kafka based Tcin Sequence Generator, serving as an efficient inventory locator that identifies stores containing inventory of a product SKU across all Target outlets<br/><br/>• Built pipelines to consolidate Kafka clusters and Redis cache in real-time for high availability during peak hours, and migrated sections of Target’s tech stack from Java, Spring and MySQL to Kotlin, Micronaut and PostgreSQL<br/><br/>• Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms
+        summary: • Search team at Target is responsible for search and recommendation on Target.com, managing the entire lifecycle from search input and autocomplete, to query completion, normalization, and query suggestions<br/><br/>• Touching Java, Kotlin, React, Docker, Kubernetes and Elasticsearch, I built and maintained enterprise grade cross-functional microservices with associated testing, observability and ops through Grafana and Kibana<br/><br/>• Improved user query suggestion ranking by leveraging search prefix prioritization, fuzzy matching and look-up tries, leading to large improvements in peak search transaction throughput<br/><br/>• Productionized a Kafka based Sequence Generator, serving as an efficient product catalog engine that consolidates information from various sources, for which I was recognized with an award<br/><br/>• Built pipelines to consolidate Kafka clusters and Redis cache in real-time for high availability during peak hours, and migrated sections of Target's tech stack from Java, Spring and MySQL to Kotlin, Micronaut and PostgreSQL<br/><br/>• Identified critical fields and re-indexed Target's fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms
       - start : August 2016
         end : August 2020
         experience : Undergraduate
