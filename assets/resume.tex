@@ -129,10 +129,10 @@
 \section{Skills}
  \begin{itemize}[leftmargin=0.15in, label={}]
     \small{\item{
-     \textbf{Languages \& Tools}{: Java, Kotlin, Python, C, C++, TypeScript, Gradle, Jenkins, gRPC, Protobuf} \\
-     \textbf{Frameworks \& AI}{: Node.js, React, GraphQL, Spring Boot, Micronaut, FastAPI, CrewAI, LangChain, MCP} \\
+     \textbf{Languages \& Tools}{: Java, Kotlin, Python, C, C++, TypeScript, Gradle, Jenkins, gRPC, Protobuf, Ollama, MLX} \\
+     \textbf{Frameworks}{: Node.js, Next.js, React, Spring Boot, Micronaut, FastAPI, FastMCP, CrewAI, LangChain, Graphiti} \\
      \textbf{Cloud Native}{: AWS EC2, EKS, S3, Lambda, Grafana, Elastic Search, Kibana, Docker, Kubernetes} \\
-     \textbf{Data}{: Kafka, Cassandra, Hadoop, Spark, PostgreSQL, Redis, MongoDB, ZooKeeper, InfluxDB, Prometheus}
+     \textbf{Data}{: Kafka, Cassandra, Hadoop, Spark, PostgreSQL, Neo4J, Redis, MongoDB, ZooKeeper, Prometheus}
     }}
  \end{itemize}
 
@@ -142,8 +142,15 @@
   \resumeSubHeadingListStart
 
       \resumeSubheading
-      {AI Research Assistant}{July 2025 -- Present}
-      {VISA Research Lab (ASU)}{Tempe, AZ}
+      {Software Engineer}{Mar 2026 -- Present}
+      {1Sphere AI}{San Francisco, CA}
+      \resumeItemListStart
+        \resumeItem{Working on building enterprise grade platforms to power AI acceleration and value generation in customer systems}
+      \resumeItemListEnd
+
+      \resumeSubheading
+      {Research Assistant}{July 2025 -- Feb 2026}
+      {VISA Research Lab (ASU)}{Austin, TX}
       \resumeItemListStart
         \resumeItem{Aiding PhD research into social health recommendation agents focusing on LLM based adaptive personalization}
         \resumeItem{Working on long term memory context retrieval with open-source MCPs and Agentic RAG, leveraging CrewAI}
@@ -154,8 +161,7 @@
       {National Basketball Association (NBA)}{New York City, NY}
       \resumeItemListStart
         \resumeItem{Worked on core frontend infrastructure for Sports News, Ads, Catalogs, Scores and Subscriptions on NBA.com}
-        \resumeItem{Performed Tailwind to CSS codebase migrations and abstracted JavaScript serialization into separate packages}
-        \resumeItem{Refactored core Python authentication REST APIs for League Pass subscriptions, and created a framework for granular control over ads serving logic in GraphQL}
+        \resumeItem{Refactored Tailwind to CSS, core Python authentication REST APIs for subscriptions, as well as ads serving logic}
       \resumeItemListEnd
 
     \resumeSubheading
@@ -166,7 +172,6 @@
         \resumeItem{Touching Java, Kotlin, React, Docker, Kubernetes and Elasticsearch, I built and maintained enterprise grade cross-functional microservices with associated testing, observability and ops through Grafana and Kibana}
         \resumeItem{Improved user query suggestion ranking by leveraging search prefix prioritization, fuzzy matching and look-up tries, leading to large improvements in peak search transaction throughput}
         \resumeItem{Productionized a Kafka based Sequence Generator, serving as an efficient product catalog engine that consolidates information from various sources, for which I was recognized with an award}
-        \resumeItem{Built pipelines to consolidate Kafka clusters and Redis cache in real-time for high availability during peak hours, and migrated sections of Target’s tech stack from Java, Spring and MySQL to Kotlin, Micronaut and PostgreSQL}
         \resumeItem{Identified critical fields and re-indexed Target’s fork of Metabase that interfaces with MongoDB, resulting in reduced time taken to visualize data from over a minute down to sub 1000ms}
       \resumeItemListEnd
 
@@ -187,22 +192,11 @@
 %-----------PROJECTS-----------
 \section{Projects}
     \resumeSubHeadingListStart
+        \resumeItem{\textbf{ConGaraf}{: An MCP server for asynchronous context persistence and retrieval, using a hybrid memory architecture with both a Lance vector DB for verbatim lookup and a structured Neo4J knowledge graph managed by Graphiti that grows as new messages flow in through a Redis backed Celery queue, leveraging Ollama Qwen models for context understanding}}
         \resumeItem{\textbf{MidLLaMAI}{: Benchmarking suite for evaluating performance of compressed LLaMA models, focused on finding an optimal balance between different pruning and quantization techniques with varying model sizes}}
         \resumeItem{\textbf{Crypticket}{: An offline capable cryptographic ticket generation and authentication platform using service workers and local storage caching. Built as a responsive PWA using React, utilizing EdDSA elliptic curve cryptography}}
         \resumeItem{\textbf{Accentrix}{: A Deep Learning system built with PyTorch and XGBoost for accent conversion and classification through mapping MFCC vectors describing the short-term power spectrum of sound, including a React based web interface}}
     \resumeSubHeadingListEnd
-
-
-%-----------Awards & Honors-----------
-\section{Awards \& Honors}
-    \resumeSubHeadingListStart
-      \resumeProjectHeading
-          {\textbf{R\&D Recognition Award} $|$ \emph{Target Corporation}}{Oct. 2021}
-          \resumeItemListStart
-            \resumeItem{Developed a high impact product catalog consolidator across Target's inventory in the enterprise search pipeline}
-          \resumeItemListEnd
-    \resumeSubHeadingListEnd
-
 
 %-------------------------------------------
 \end{document}
